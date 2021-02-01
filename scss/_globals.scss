@@ -1,0 +1,25 @@
+html {
+  font-size: 100%; // more accessible - let's the user controle the zoom level in the browser
+  box-sizing: border-box; // includes padding in the final width
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: $font-std;
+  font-family: "Be Vietnam", sans-serif;
+  overflow-x: hidden; // cuts off everything wider than the viewport width (the offset of the hero background image would cause horizontally scrollbars otherwise)
+}
+
+// Text
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+}
